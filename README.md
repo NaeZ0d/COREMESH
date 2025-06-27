@@ -32,10 +32,10 @@ The COREMESH Homelab is designed to simulate a real-world enterprise network env
 |------------------|-------|------|-----------------------------------------|
 | DC01             | 1     | 2GB  | Active Directory, DNS, DHCP             |
 | FS01             | 1     | 2GB  | File Server (SMB storage)                |
-| LocalUser (opt.) | 1     | 1.5GB| Management/Local admin VM (usually off) |
+| LocalUser (opt.) | 1     | 1GB| Management/Local admin VM (usually off) |
 
 **Notes:**  
-- Total used: **3 cores, ~5.5GB RAM**  
+- Total used: **3 cores, ~5GB RAM**  
 - Plenty of overhead for light admin or maintenance tasks  
 
 ---
