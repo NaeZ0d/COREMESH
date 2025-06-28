@@ -34,11 +34,10 @@ The COREMESH Homelab is designed to simulate a real-world enterprise network env
 | FS01             | 1     | 2GB  | File Server (SMB storage)                |
 | LocalUser (opt.) | 1     | 1GB| Management/Local admin VM (usually off) |
 
-**Notes:**  
-- Total used: **3 cores, ~5GB RAM**  
-- Plenty of overhead for light admin or maintenance tasks  
+
 
 ---
+
 
 ### Dell OptiPlex 7050 Micro (4 cores, 16GB RAM)  
 **Role:** Security VM Host  
@@ -48,13 +47,13 @@ The COREMESH Homelab is designed to simulate a real-world enterprise network env
 |------------------|-------|-----|----------------------------------------|
 | FW01             | 1     | 2GB | Firewall (pfSense/OPNsense) & VLANs    |
 | Kali Linux Purple | 1     | 3GB | Red/Purple team penetration testing    |
-| Honeypot/IDS VM  | 1     | 4GB | Cowrie/Dionaea honeypot + Suricata/Snort IDS        |
+| Nessus  | 1     | 4GB | Nessus Vulnerability Scanner        |
+| Rocky Linux  | 1     | 2GB | Linux IAM        |
 
-**Notes:**  
-- Total used: **3 cores, ~9GB RAM**  
-- ~7GB RAM remains for desktop or snapshot testing  
+
 
 ---
+
 
 ### Beelink Mini PC (10 cores, 12 threads, 16GB RAM)  
 **Role:** Main VM Host + DB Server  
@@ -65,12 +64,13 @@ The COREMESH Homelab is designed to simulate a real-world enterprise network env
 | SQL01                 | 1     | 2GB | MySQL/MariaDB backend                   |
 | SIEM01                | 3     | 6GB | SIEM platform (ELK or Wazuh)            |
 | SecurityAnalytics01   | 2     | 4GB | Graylog, TheHive, or FleetDM dashboards |
+| Suricata   | 1     | 2GB | IPS(incline), Lower traffic volumes |
+| Snort   | 1     | 2GB | IDS(passive), Basic packet monitoring |
 
-**Notes:**  
-- Total used: **8 cores, ~12GB RAM**  
-- Scalable for CI/CD and container expansion  
+
 
 ---
+
 
 ### Raspberry Pi 4B (8GB RAM)  
 **Role:** Blue Team Utility Node (DNS Filtering + VPN Gateway)  
@@ -90,7 +90,9 @@ The COREMESH Homelab is designed to simulate a real-world enterprise network env
 - Log collection and forwarding to SIEM  
 - Lightweight monitoring and deception  
 
+
 ---
+
 
 ### Raspberry Pi 5 (16GB RAM, 1TB NVMe)  
 **Role:** Security Operations Node (SOC-in-a-Box)  
