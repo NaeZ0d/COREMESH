@@ -48,7 +48,7 @@ The COREMESH Homelab is designed to simulate a real-world enterprise network env
 |------------------|-------|-----|----------------------------------------|
 | FW01             | 1     | 2GB | Firewall (pfSense/OPNsense) & VLANs    |
 | Kali Linux Purple | 1     | 3GB | Red/Purple team penetration testing    |
-| Honeypot/IDS VM  | 1     | 4GB | Honeypot + IDS (Suricata/Snort)        |
+| Honeypot/IDS VM  | 1     | 4GB | Cowrie/Dionaea honeypot + Suricata/Snort IDS        |
 
 **Notes:**  
 - Total used: **3 cores, ~9GB RAM**  
@@ -62,7 +62,6 @@ The COREMESH Homelab is designed to simulate a real-world enterprise network env
 
 | VM Name               | vCPU | RAM | Purpose                                 |
 |-----------------------|-------|-----|-----------------------------------------|
-| Web01                 | 1     | 2GB | Portfolio website (NGINX/Apache + Docker) |
 | SQL01                 | 1     | 2GB | MySQL/MariaDB backend                   |
 | SIEM01                | 3     | 6GB | SIEM platform (ELK or Wazuh)            |
 | SecurityAnalytics01   | 2     | 4GB | Graylog, TheHive, or FleetDM dashboards |
@@ -83,7 +82,6 @@ The COREMESH Homelab is designed to simulate a real-world enterprise network env
 **Services:**  
 - Pi-hole / AdGuard Home for DNS filtering  
 - WireGuard VPN Server for secure remote access  
-- Netdata / Node Exporter for device monitoring  
 - Optional: Syslog-ng / rsyslog log aggregation  
 - Optional: Cowrie honeypot for SSH/telnet deception  
 
