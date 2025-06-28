@@ -57,7 +57,7 @@ The COREMESH Homelab is designed to simulate a real-world enterprise network env
 ---
 
 ### Beelink Mini PC (10 cores, 12 threads, 16GB RAM)  
-**Role:** Main VM Host + Web/DB Server  
+**Role:** Main VM Host + DB Server  
 - 2 cores reserved for host OS, 8 cores for VMs  
 
 | VM Name               | vCPU | RAM | Purpose                                 |
@@ -67,7 +67,7 @@ The COREMESH Homelab is designed to simulate a real-world enterprise network env
 | SecurityAnalytics01   | 2     | 4GB | Graylog, TheHive, or FleetDM dashboards |
 
 **Notes:**  
-- Total used: **8 cores, ~15GB RAM**  
+- Total used: **8 cores, ~12GB RAM**  
 - Scalable for CI/CD and container expansion  
 
 ---
